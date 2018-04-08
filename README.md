@@ -1,7 +1,7 @@
 ## Simple Node Server with Docker
 
 ```
-$ git clone git@github.com:resin-projects/simple-server-node.git
+$ git clone https://github.com/DavidStreid/nodeServer_docker.git
 $ npm install
 ```
 
