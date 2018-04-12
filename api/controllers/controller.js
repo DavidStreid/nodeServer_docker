@@ -7,6 +7,7 @@ var allowedOrigins = ["*"];   // valid hosts for CORS
 
 exports.textPost = function(req,res){
   if(logging_enabled) console.log("controller::textPost")
+  setCORSHeaders(res, allowedOrigins, ["POST"]);
   const text = req.body.text;
   res.send({'text': text});
 }
