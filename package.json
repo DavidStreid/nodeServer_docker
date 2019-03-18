@@ -1,11 +1,12 @@
 {
   "name": "node-docker-server",
   "version": "1.0.0",
-  "description": "Expressjs node application that can be deployed on docker",
+  "description": "Expressjs node application w/ mongo db that can be deployed on docker",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "devStart": "nodemon server.js"       
+    "devStart": "nodemon server.js",
+    "db": "mongod"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,10 @@
   "license": "Apache-2.0",
   "dependencies": {
     "express": "*",
-    "request": "*"
+    "request": "*",
+    "cookie-parser": "^1.4.4",
+    "mongoose": "^4.4.12",
+    "mongodb": "^2.1.16"
   },
   "devDependencies": {
     "nodemon": "^1.17.3"
