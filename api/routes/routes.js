@@ -1,12 +1,12 @@
 'use strict';
 module.exports = function(app) {
-  	var companion = require('../controllers/controller');
+	// const controller = require('../controllers/controller');
 
-	app.route('/helloWorld')
-		.get(companion.helloWorld)
+	/*
 
-	app.route('/textPost')					// Content-Type: Application/json
-		.post(companion.textPost)
-	app.route('/textPost')					// Handle Pre-flight request
-		.options(companion.textPostOptions)
+    app.route('/ROUTE_NAME').get(controller.ROUTE_METHOD);
+    app.route('/ROUTE_NAME').post(controller.ROUTE_METHOD);
+    app.route('/ROUTE_NAME').options(controller.PRE-FLIGHT_ROUTE_METHOD);
+
+     */
 };
